@@ -41,6 +41,7 @@ body {
     color: aliceblue;
     text-decoration: none;
     font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Login/Register Desktop */
@@ -48,6 +49,7 @@ body {
     color: aliceblue;
     text-decoration: none;
     font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Hamburger (Hidden in Desktop) */
@@ -111,4 +113,43 @@ body {
     .hamburger {
         display: block;
     }
+}
+
+
+/* CONTACT PAGE */
+.contact-container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-container h1 {
+    font-size: 32px;
+    color: #1A4403;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-card {
+    background: #228b22;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-card .note {
+    font-size: 15px;
+    color: #1A4403;
+    margin-top: 10px;
 }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – WesternSpiera</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts (same as your index.html) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600&family=Lato:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Nunito:wght@400;700&family=Inter:wght@400;700&family=Work+Sans:wght@400;700&family=Raleway:wght@400;700&family=Quicksand:wght@400;700&family=Josefin+Sans:wght@400;700&family=Kanit:wght@400;700&family=Exo+2:wght@400;700&family=Fira+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Rubik:wght@400;700&family=Mukta:wght@400;700&family=Hind:wght@400;700&family=Mulish:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Bebas+Neue&family=Oswald:wght@400;700&family=Anton&family=Teko:wght@400;700&family=Arvo:wght@400;700&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header class="header">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="WesternSpiera logo">
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+
+            <div class="auth">
+                <a href="#">Register</a> / <a href="#">Login</a>
+            </div>
+        </nav>
+
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-container">
+
+        <h1>Contact Us</h1>
+        <p>If you have any questions or product inquiries, feel free to reach us anytime.</p>
+
+        <div class="contact-card">
+            <p><strong>Email:</strong> priyanhari2303@gmail.com</p>
+            <p><strong>Phone / WhatsApp:</strong> +91 88383 47032</p>
+            <p><strong>Location:</strong> TamilNadu, India</p>
+            <hr>
+
+            <p class="note">
+                Our website is currently under maintenance.<br>
+                We will launch soon. Thank you for your support!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCRIPT FOR MOBILE MENU -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav").classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
