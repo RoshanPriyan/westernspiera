@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WesternSpiera</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="WesternSpiera logo">
+        </div>
+
+        <!-- Hamburger Icon (Mobile Only) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="auth">
+                <a href="#">Register</a> / <a href="#">Login</a>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div class="maintenance">
+        <h1>🚧 Site Under Maintenance</h1>
+        <p>Our team is currently working on improvements.</p>
+        <p>We will be back online very soon. Thank you for your patience!</p>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav").classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
