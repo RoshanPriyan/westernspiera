@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #228b22;
+    background-color: black;
     color: aliceblue;
     padding: 10px 20px;
     position: relative;
@@ -76,6 +76,37 @@ body {
     color: #333;
     margin: 8px 0;
 }
+.maintenance-links {
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.maintenance-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.maintenance-links ul li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.maintenance-links ul li a {
+    text-decoration: none;
+    color: #1A4403; /* Green accent to match your theme */
+    font-weight: 600;
+}
+
+.maintenance-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.maintenance-links .thank-you {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
 
 /* 🔥 MOBILE RESPONSIVE STYLES */
 @media (max-width: 768px) {

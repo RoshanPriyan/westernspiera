@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WesternSpiera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/about_style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <img src="images/ws_logo.png" alt="WesternSpiera logo">
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+
+            <div class="auth">
+                <a href="#">Register</a> / <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <h1>About WesternSpiera</h1>
+
+        <p>WesternSpiera is a premium spice brand committed to bringing authentic, high-quality spices straight from the
+            Western Ghats to your kitchen. Each product is carefully sourced to ensure the finest flavors and aromas
+            reach you.</p>
+
+        <p>The name <strong>“WesternSpiera”</strong> is inspired by the <strong>Western Ghats</strong>, the region where
+            many of our spices are grown. <strong>“Spiera”</strong> represents the rich flavors and aromas we deliver in
+            every product, connecting tradition with modern taste.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide fresh, flavorful, and high-quality spices while promoting sustainability and
+            supporting the communities where our products are grown.</p>
+
+        <h2>Our Vision</h2>
+        <p>We envision becoming a trusted name for premium spices, known for quality, authenticity, and innovation,
+            enhancing kitchens and meals around the world.</p>
+
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>100% premium quality, authentic spices</li>
+            <li>Sourced directly from the Western Ghats</li>
+            <li>Carefully handled to preserve aroma and flavor</li>
+            <li>Customer-focused service and support</li>
+        </ul>
+
+        <p>Want to know more? <a href="contact_us.html">Contact us</a> or explore our <a
+                href="products.html">products</a>.</p>
+    </div>
+    <!-- SCRIPT FOR MOBILE MENU -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
