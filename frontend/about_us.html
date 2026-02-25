@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - WesternSpiera</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/about_style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Mulish:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,63 +19,147 @@
 
         <div class="logo">
             <img src="images/ws_logo.png" alt="WesternSpiera logo">
+            <span class="logo-text">WesternSpiera</span>
         </div>
 
         <!-- Hamburger (mobile) -->
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776;
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Products</a></li>
-                <li><a href="about_us.html">About</a></li>
+                <li><a href="about_us.html" class="active">About</a></li>
                 <li><a href="contact_us.html">Contact</a></li>
             </ul>
 
             <div class="auth">
-                <a href="#">Register</a> / <a href="#">Login</a>
+                <a href="#" class="btn-register">Register</a>
+                <a href="#" class="btn-login">Login</a>
             </div>
         </nav>
     </header>
 
-    <div class="about-container">
-        <h1>About WesternSpiera</h1>
+    <main class="about-page-bg">
 
-        <p>WesternSpiera is a premium spice brand committed to bringing authentic, high-quality spices straight from the
-            Western Ghats to your kitchen. Each product is carefully sourced to ensure the finest flavors and aromas
-            reach you.</p>
+        <!-- Hero Banner -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <p class="about-eyebrow">Our Story</p>
+                <h1>Rooted in Tradition.<br>Crafted with Purpose.</h1>
+                <p class="about-hero-sub">From the misty slopes of the Western Ghats to your kitchen — premium spices, authentic flavors.</p>
+            </div>
+        </section>
 
-        <p>The name <strong>“WesternSpiera”</strong> is inspired by the <strong>Western Ghats</strong>, the region where
-            many of our spices are grown. <strong>“Spiera”</strong> represents the rich flavors and aromas we deliver in
-            every product, connecting tradition with modern taste.</p>
+        <div class="about-container">
 
-        <h2>Our Mission</h2>
-        <p>Our mission is to provide fresh, flavorful, and high-quality spices while promoting sustainability and
-            supporting the communities where our products are grown.</p>
+            <!-- Intro Card -->
+            <div class="about-card fade-in" style="--delay: 0.1s">
+                <div class="card-accent"></div>
+                <p class="about-intro">WesternSpiera is a premium spice brand committed to bringing authentic, high-quality spices straight from the
+                    <strong>Western Ghats</strong> to your kitchen. Each product is carefully sourced to ensure the finest flavors and aromas reach you.</p>
+                <p class="about-name-note">The name <strong>"WesternSpiera"</strong> is inspired by the <strong>Western Ghats</strong> — the region where many of our spices are grown. <strong>"Spiera"</strong> represents the rich flavors and aromas we deliver in every product, connecting tradition with modern taste.</p>
+            </div>
 
-        <h2>Our Vision</h2>
-        <p>We envision becoming a trusted name for premium spices, known for quality, authenticity, and innovation,
-            enhancing kitchens and meals around the world.</p>
+            <!-- Mission & Vision Grid -->
+            <div class="about-grid">
 
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>100% premium quality, authentic spices</li>
-            <li>Sourced directly from the Western Ghats</li>
-            <li>Carefully handled to preserve aroma and flavor</li>
-            <li>Customer-focused service and support</li>
-        </ul>
+                <div class="about-card about-card--highlight fade-in" style="--delay: 0.2s">
+                    <div class="card-icon">🎯</div>
+                    <h2>Our Mission</h2>
+                    <p>To provide fresh, flavorful, and high-quality spices while promoting sustainability and supporting the communities where our products are grown.</p>
+                </div>
 
-        <p>Want to know more? <a href="contact_us.html">Contact us</a> or explore our <a
-                href="products.html">products</a>.</p>
-    </div>
-    <!-- SCRIPT FOR MOBILE MENU -->
+                <div class="about-card about-card--highlight fade-in" style="--delay: 0.3s">
+                    <div class="card-icon">🌄</div>
+                    <h2>Our Vision</h2>
+                    <p>To become a trusted name for premium spices — known for quality, authenticity, and innovation, enhancing kitchens and meals around the world.</p>
+                </div>
+
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="about-card fade-in" style="--delay: 0.4s">
+                <div class="card-accent"></div>
+                <h2>Why Choose Us?</h2>
+                <ul class="about-list">
+                    <li>
+                        <span class="list-icon">✦</span>
+                        <div>
+                            <strong>100% Authentic Quality</strong>
+                            <p>Premium spices, unadulterated and true to their origin.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="list-icon">✦</span>
+                        <div>
+                            <strong>Directly Sourced</strong>
+                            <p>Harvested straight from the Western Ghats — no middlemen.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="list-icon">✦</span>
+                        <div>
+                            <strong>Aroma & Flavor Preserved</strong>
+                            <p>Carefully handled, dried, and packed to lock in freshness.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="list-icon">✦</span>
+                        <div>
+                            <strong>Customer-First Approach</strong>
+                            <p>Dedicated service and support at every step of your journey.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CTA -->
+            <div class="about-cta fade-in" style="--delay: 0.5s">
+                <p>Want to know more?</p>
+                <div class="cta-buttons">
+                    <a href="contact_us.html" class="cta-btn cta-btn--primary">Get in Touch</a>
+                    <a href="products.html" class="cta-btn cta-btn--outline">Explore Products</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
     <script>
         function toggleMenu() {
-            document.querySelector(".nav").classList.toggle("show");
+            const nav = document.getElementById('nav');
+            const hamburger = document.getElementById('hamburger');
+            nav.classList.toggle('show');
+            hamburger.classList.toggle('open');
         }
+
+        document.addEventListener('click', function (e) {
+            const nav = document.getElementById('nav');
+            const hamburger = document.getElementById('hamburger');
+            if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                nav.classList.remove('show');
+                hamburger.classList.remove('open');
+            }
+        });
+
+        // Intersection Observer for fade-in on scroll
+        const fadeEls = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        fadeEls.forEach(el => observer.observe(el));
     </script>
+
 </body>
 
 </html>
